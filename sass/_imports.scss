@@ -1,0 +1,60 @@
+//SASS VARIALES AND MIXINS
+$red-1: rgb(207,65,51);
+$red-2: rgb(194,85,53);
+$yellow-1: rgb(242, 183, 67);
+$yellow-2: rgb(227,189,70);
+$red-3: rgb(204,93,109);
+$red-4: rgb(193,85,53);
+
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//MEDIA QUERY MANAGER
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width: 48em) {
+            @content
+        }
+        ; //576px
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 48em) {
+            @content
+        }
+        ; //768px
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 62em) {
+            @content
+        }
+        ; //992px
+    }
+
+    @if $breakpoint==mid-desk {
+        @media (max-width: 75em) {
+            @content
+        }
+        ; //1200px
+    }
+    
+    @if $breakpoint==large-desk {
+        @media (min-width: 112.5em) {
+            @content
+        }
+        ; //1800px
+    }
+}
