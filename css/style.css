@@ -1,15 +1,15 @@
 /*
-Theme Name: 	
+Theme Name:
 Author: 		mrshoikot
-Description:	
+Description:
 Version: 		1.0.0
 */
 /*-----------INDEX-----------*/
 /*
 1    Basic Style
-2    Reuseable Componants       
-3    Navigation Bar       
-4    Hero Section       
+2    Reuseable Componants
+3    Navigation Bar
+4    Hero Section
 */
 /*
 -----------------------------------------
@@ -41,8 +41,7 @@ body {
   letter-spacing: 1;
   line-height: 1.5;
   min-height: 100vh;
-  overflow: hidden;
-  border: 10px solid #fff; }
+  overflow: hidden;}
 
 @media (max-width: 48em) {
   body {
@@ -195,7 +194,10 @@ img::selection {
       margin-right: 2rem;
       color: #fff;
       font-size: 3rem;
-      background: #333; }
+      background: #333;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      }
     #megatrends .mt-list li:nth-child(odd) .mt-list-item-icon {
       background: #c15535; }
 
