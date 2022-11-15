@@ -519,7 +519,7 @@ img::selection {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
-  background: url("../images/main_bg.png"), linear-gradient(#c15535, #f2b743); }
+  background: linear-gradient(#c15535, #f2b743); }
 
 #background-2 {
   overflow: hidden;
