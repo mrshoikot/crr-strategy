@@ -1,0 +1,207 @@
+
+
+
+#background-1 {
+	position: relative;
+	overflow: hidden;
+
+	.layer-1 {
+		background: $red-2;
+		width: 70%;
+		height: 100vh;
+		clip-path: polygon(0 0, 0% 100%, 100% 100%);
+		z-index: 2;
+		position: relative;
+	}
+
+	.layer-2 {
+		width: 100%;
+		height: 100vh;
+		background: $yellow-2;
+		clip-path: polygon(0 0, 10% 0, 80% 100%, 70% 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.layer-6 {
+		width: 100%;
+		height: 100vh;
+		background: #eee;
+		clip-path: polygon(13% 0, 35% 0, 80% 73%, 83% 100%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+
+	.layer-3 {
+		width: 33.333333333333%;
+		height: 100vh;
+		background: $red-4;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.layer-4,
+	.layer-5,
+	.layer-7 {
+		display: none;
+	}
+
+	@media (min-width: 1340px) {
+		.layer-7 {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 50%;
+			max-width: 60rem;
+			width: 100%;
+			background: url('../images/backgrounds/page\ 1.png') no-repeat;
+			z-index: 2;
+			background-position: 100% 80%;
+			clip-path: polygon(0 0, 0 100%, 100% 0);
+		}
+
+		.layer-4 {
+			position: absolute;
+			bottom: 0;
+			display: block;
+			right: -45%;
+			width: 100%;
+			height: 25rem;
+			background: url('../images/backgrounds/page-1-bottom-right.png') no-repeat;
+			background-size: 80% 200%;
+			background-position: 0 0;
+			z-index: 3;
+		}
+
+		.layer-5 {
+            display: block;
+			background: rgb(70,70,70);
+            right: -45%;
+			width: 100%;
+			transform: translateX(-10%);
+			height: 25rem;
+			bottom: 0;
+            clip-path: polygon(3% 0, 50% 0, 40% 100%, 23% 100%);
+            z-index: 2;
+            position: absolute;
+		}
+	}
+}
+
+.lm-animated-bg {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: -28px;
+    left: -28px;
+    right: -28px;
+    bottom: -28px;
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+	background: url('../images/main_bg.png'), linear-gradient($red-4, $yellow-1) ;
+}
+
+#background-2 {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+
+	@include respond(phone) {
+		position: fixed;
+	}
+
+	.layer-1 {
+		background: #888;
+		width: 15rem;
+		height: 200vh;
+		position: absolute;
+		bottom: 0;
+		left: 25%;
+		transform: rotate(45deg);
+		transform-origin: 0 100%;
+	}
+
+	.layer-2 {
+		background: #eee;
+		width: 20rem;
+		height: 200vh;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: rotate(45deg) translate(-50%, 0);
+		transform-origin: 0 100%;
+	}
+
+	.layer-3 {
+		background: $yellow-1;
+		width: 22rem;
+		height: 200vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: rotate(-45deg);
+		transform-origin: 0 0;
+		opacity: .9;
+	}
+
+	.layer-4 {
+		background: #464646;
+		width: 12rem;
+		height: 200vh;
+		position: absolute;
+		top: 0;
+		left: 20%;
+		transform: rotate(-45deg);
+		transform-origin: 0 0;
+	}
+
+	.layer-5 {
+		background: $red-4;
+		width: 50%;
+		height: 200vh;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: rotate(45deg);
+		transform-origin: 0 100%;
+	}
+
+	.layer-6 {
+		background: $red-4;
+		width: 13rem;
+		height: 200vh;
+		position: absolute;
+		top: 0;
+		left: 30rem;
+		transform: rotate(45deg);
+		transform-origin: 100% 0;
+	}
+
+	.layer-7 {
+		background: url('../images/backgrounds/page-2-top-right.png') no-repeat;
+		position: absolute;
+		top: -1rem;
+		right: 0;
+		height: 50rem;
+		width: 70rem;
+		background-size: auto 110%;
+
+		@include respond(phone) {
+			display: none;
+		}
+	}
+}
+
+
+

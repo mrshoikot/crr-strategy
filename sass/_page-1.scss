@@ -1,0 +1,247 @@
+
+
+/*
+-----------------------------------------
+2.   PAGE 1
+-----------------------------------------
+*/
+
+#page-1 {
+	margin: 0 auto;
+	overflow: hidden;
+
+	@include respond(phone) {
+		overflow: auto;
+		background: $red-4;
+	}
+
+	#background-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+
+		&>* {
+			@include respond(phone) {
+				background: $red-4;
+				clip-path: initial;
+			}
+		}
+	}
+}
+
+#table-of-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: flex-end;
+	max-width: 95%;
+	margin: 0 auto;
+	color: #fff;
+	padding: 1rem 4rem;
+
+	@include respond(mid-desk) {
+		padding: 2rem;
+		max-width: 100%;
+	}
+
+	.title {
+		h3 {
+			line-height: .9;
+			padding-bottom: 1rem;
+			font-style: italic;
+			font-weight: 700;
+			font-size: 2.5rem;
+			letter-spacing: 1px;
+
+			span {
+				display: block;
+				font-size: 3rem;
+				color: #000;
+			}
+		}
+	}
+
+	.tc-list {
+		list-style-type: none;
+		padding: 0;
+
+		.tc-list-item {
+			display: flex;
+			align-items: center;
+			margin: 1rem 0;
+
+			.tc-list-item-icon {
+				height: 6rem;
+				flex: 0 0 6rem;
+				border: 2px solid #fff;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 2rem;
+
+				img {
+					display: block;
+					max-width: 60%;
+				}
+			}
+
+			h4 {
+				font-size: 2rem;
+				font-weight: 600;
+			}
+
+			p {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+
+#megatrends {
+	max-width: 40rem;
+	margin: 7rem auto 0;
+
+	@include respond(mid-desk) {
+		padding: 2rem;
+		max-width: 100%;
+	}
+
+	@include respond(phone) {
+		margin: 0rem auto 0;
+		color: #fff;
+	}
+
+	.title {
+		text-align: center;
+
+		h3 {
+			font-weight: 700;
+			font-size: 2.2rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+			padding: 1rem 0;
+		}
+	}
+
+	.mt-list {
+		list-style-type: none;
+		padding: 0;
+		position: relative;
+
+		&:after {
+			content: '';
+			height: 70%;
+			width: 0.2rem;
+			background: #ccc;
+			display: block;
+			position: absolute;
+			left: calc(3rem - 0.1rem);
+			bottom: 1rem;
+			z-index: -1;
+		}
+
+		.mt-list-item {
+			display: flex;
+			align-items: center;
+			margin: 3rem 0;
+
+			h4 {
+				font-size: 1.6rem;
+				font-weight: 600;
+			}
+
+			p {
+				font-size: 1.4rem;
+			}
+		}
+
+		.mt-list-item-icon {
+			height: 6rem;
+			flex: 0 0 6rem;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 2rem;
+			color: #fff;
+			font-size: 3rem;
+			background: #333;
+		}
+
+		li:nth-child(odd) {
+			.mt-list-item-icon {
+				background: $red-4;
+			}
+		}
+	}
+}
+
+
+
+
+#market-themes {
+	color: #fff;
+	padding: 3rem;
+	height: 100%;
+	max-width: 40rem;
+	margin: 0 auto;
+
+	@include respond(phone) {
+		padding: 3rem 0;
+	}
+
+	.title {
+		text-align: center;
+
+		h3 {
+			font-weight: 700;
+			font-size: 2.2rem;
+		}
+
+		p {
+			font-size: 1.4rem;
+			padding: 1rem 0;
+		}
+	}
+
+	.mt-list {
+		list-style: none;
+		padding: 0;
+
+		.mt-list-item-icon {
+			width: 10rem;
+
+			img {
+				display: block;
+				max-width: 60%;
+			}
+		}
+
+		.mt-list-item {
+			display: flex;
+			align-items: center;
+			margin: 0rem 0;
+
+			@include respond(phone) {
+				margin: 2rem 0;
+			}
+
+			h4 {
+				font-weight: 700;
+				margin: 0;
+			}
+
+			p {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+

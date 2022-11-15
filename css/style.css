@@ -18,7 +18,7 @@ Version: 		1.0.0
 */
 html {
   /* This defines what 1 rem is. 1rem = 10px */
-  font-size: 62.5%; }
+  font-size: 55.5%; }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -39,12 +39,23 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   letter-spacing: 1;
-  line-height: 1.5; }
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow: hidden;
+  border: 10px solid #fff; }
+
+@media (max-width: 48em) {
+  body {
+    overflow: auto; }
+    body .site {
+      overflow-x: hidden; } }
 
 a,
 .btn {
   color: #000;
-  transition: all 0.3s ease-out 0s; }
+  transition: all 0.3s ease-out 0s;
+  border: 2px solid #fff;
+  border-radius: 50%; }
 
 a,
 a:hover,
@@ -88,20 +99,20 @@ img::selection {
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
   color: #fff;
-  padding: 4rem; }
+  padding: 1rem 4rem; }
   @media (max-width: 75em) {
     #table-of-content {
       padding: 2rem;
       max-width: 100%; } }
   #table-of-content .title h3 {
     line-height: .9;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     font-style: italic;
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     letter-spacing: 1px; }
     #table-of-content .title h3 span {
       display: block;
@@ -130,7 +141,7 @@ img::selection {
         font-size: 2rem;
         font-weight: 600; }
       #table-of-content .tc-list .tc-list-item p {
-        font-size: 1.3rem; }
+        font-size: 1.5rem; }
 
 #megatrends {
   max-width: 40rem;
@@ -149,7 +160,7 @@ img::selection {
       font-weight: 700;
       font-size: 2.2rem; }
     #megatrends .title p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       padding: 1rem 0; }
   #megatrends .mt-list {
     list-style-type: none;
@@ -173,7 +184,7 @@ img::selection {
         font-size: 1.6rem;
         font-weight: 600; }
       #megatrends .mt-list .mt-list-item p {
-        font-size: 1.2rem; }
+        font-size: 1.4rem; }
     #megatrends .mt-list .mt-list-item-icon {
       height: 6rem;
       flex: 0 0 6rem;
@@ -191,7 +202,7 @@ img::selection {
 #market-themes {
   color: #fff;
   padding: 3rem;
-  height: 100vh;
+  height: 100%;
   max-width: 40rem;
   margin: 0 auto; }
   @media (max-width: 48em) {
@@ -203,7 +214,7 @@ img::selection {
       font-weight: 700;
       font-size: 2.2rem; }
     #market-themes .title p {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       padding: 1rem 0; }
   #market-themes .mt-list {
     list-style: none;
@@ -224,25 +235,22 @@ img::selection {
         font-weight: 700;
         margin: 0; }
       #market-themes .mt-list .mt-list-item p {
-        font-size: 1.2rem; }
+        font-size: 1.4rem; }
 
 /*
 -----------------------------------------
 3.   PAGE 2
 -----------------------------------------
 */
-#page-2 {
-  overflow: hidden; }
-  @media (max-width: 48em) {
-    #page-2 {
-      overflow-y: auto; } }
+@media (max-width: 48em) {
+  #page-2 {
+    overflow-y: auto; } }
 
 #risk-priorities {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh; }
+  justify-content: center; }
   @media (max-width: 48em) {
     #risk-priorities {
       height: auto;
@@ -255,12 +263,12 @@ img::selection {
       margin-top: 1rem; }
   #risk-priorities img.top {
     display: block;
-    max-width: 25rem;
+    max-width: 23rem;
     border-radius: 50%; }
   #risk-priorities .rp-list {
     list-style-type: none;
     padding: 0;
-    max-width: 40rem; }
+    max-width: 43rem; }
     @media (max-width: 48em) {
       #risk-priorities .rp-list {
         max-width: 90%;
@@ -269,8 +277,8 @@ img::selection {
       border-radius: 20px; }
       #risk-priorities .rp-list li .rp-list-item-icon {
         border: 2px solid #fff;
-        height: 6rem;
-        flex: 0 0 6rem;
+        height: 5rem;
+        flex: 0 0 5rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -293,13 +301,13 @@ img::selection {
         display: flex;
         align-items: center;
         margin: 1rem 0;
-        padding: 1rem 2rem;
+        padding: .8rem 2rem;
         color: #fff; }
         #risk-priorities .rp-list li .rp-list-item h4 {
           font-size: 2rem;
           font-weight: 600; }
         #risk-priorities .rp-list li .rp-list-item p {
-          font-size: 1.2rem; }
+          font-size: 1.4rem; }
 
 #client-needs {
   display: flex;
@@ -326,7 +334,7 @@ img::selection {
     #client-needs .title p {
       font-style: italic;
       font-weight: 600;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 1.3;
       margin-top: 0.5rem; }
   #client-needs .cn-list {
@@ -346,7 +354,7 @@ img::selection {
         font-size: 1.6rem;
         font-weight: 600; }
       #client-needs .cn-list .cn-list-item p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: #555; }
       #client-needs .cn-list .cn-list-item .cn-list-item-icon {
         border: 2px solid #fff;
@@ -369,17 +377,9 @@ img::selection {
   justify-content: flex-end;
   height: 100%;
   padding: 0 0 6rem 10rem; }
-  @media (max-width: 48em) {
-    #page-title {
-      padding: 5rem 0 !important;
-      text-align: center;
-      justify-content: initial;
-      background: rgba(255, 255, 255, 0.5); }
-      #page-title * {
-        color: #000 !important; } }
-  @media (max-width: 62em) {
-    #page-title {
-      padding: 0 0 6rem 5rem; } }
+  #page-title img {
+    max-width: 6.5rem;
+    padding-bottom: 1rem; }
   #page-title h2 {
     font-weight: 700;
     color: #fff;
@@ -398,12 +398,38 @@ img::selection {
     color: #fff;
     font-style: italic; }
 
+@media (max-width: 48em) {
+  #page-2 #page-title {
+    display: none; } }
+
+@media (max-width: 62em) {
+  #page-2 #page-title {
+    padding: 0 0 6rem 5rem; } }
+
 #next-icon {
-  position: fixed;
+  position: absolute;
   right: 2rem;
-  bottom: 4rem; }
+  bottom: 4rem;
+  animation: wobble 4s ease infinite;
+  transition: all .3s; }
   #next-icon img {
     height: 4rem; }
+
+@keyframes wobble {
+  70% {
+    transform: translateX(0%); }
+  74% {
+    transform: translateX(-25%) rotate(-5deg); }
+  78% {
+    transform: translateX(20%) rotate(3deg); }
+  83% {
+    transform: translateX(-15%) rotate(-3deg); }
+  87% {
+    transform: translateX(10%) rotate(2deg); }
+  92% {
+    transform: translateX(-5%) rotate(-1deg); }
+  100% {
+    transform: translateX(0%); } }
 
 #background-1 {
   position: relative;
@@ -443,14 +469,14 @@ img::selection {
   #background-1 .layer-5,
   #background-1 .layer-7 {
     display: none; }
-  @media (min-width: 112.5em) {
+  @media (min-width: 1340px) {
     #background-1 .layer-7 {
       display: block;
       position: absolute;
       top: 0;
       left: 0;
-      height: 55%;
-      max-width: 70rem;
+      height: 50%;
+      max-width: 60rem;
       width: 100%;
       background: url("../images/backgrounds/page 1.png") no-repeat;
       z-index: 2;
@@ -460,25 +486,38 @@ img::selection {
       position: absolute;
       bottom: 0;
       display: block;
-      right: -40%;
+      right: -45%;
       width: 100%;
-      height: 30rem;
+      height: 25rem;
       background: url("../images/backgrounds/page-1-bottom-right.png") no-repeat;
       background-size: 80% 200%;
       background-position: 0 0;
-      z-index: 1; }
+      z-index: 3; }
     #background-1 .layer-5 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 70%;
       display: block;
-      height: 30rem;
       background: #464646;
-      background-size: 80% 200%;
-      background-position: 0 0;
+      right: -45%;
+      width: 100%;
+      transform: translateX(-10%);
+      height: 25rem;
+      bottom: 0;
+      clip-path: polygon(3% 0, 50% 0, 40% 100%, 23% 100%);
       z-index: 2;
-      clip-path: polygon(56% 0, 67.5% 0, 100% 100%, 90% 100%); } }
+      position: absolute; } }
+
+.lm-animated-bg {
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: -28px;
+  left: -28px;
+  right: -28px;
+  bottom: -28px;
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background: url("../images/main_bg.png"), linear-gradient(#c15535, #f2b743); }
 
 #background-2 {
   overflow: hidden;
@@ -564,14 +603,97 @@ div.col-md-4:nth-child(1) {
 div.col-md-4:nth-child(2) {
   box-shadow: 0rem 0 10rem 1rem rgba(0, 0, 0, 0.2) inset; }
 
+#preloader {
+  height: 100vh;
+  max-height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 466px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: -10px 15px 30px 10px rgba(0, 0, 0, 0.3);
+  transition: all 1s; }
+  #preloader.hide {
+    left: 200%;
+    opacity: 0; }
+  #preloader .layer-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200%;
+    width: 200%;
+    background: #c25535;
+    transform: rotate(47deg);
+    z-index: -1;
+    transform-origin: 0 82%; }
+  #preloader .layer-2 {
+    background: url("../images/backgrounds/page-2-top-right.png") no-repeat;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    height: 50rem;
+    width: 70rem;
+    background-size: auto 110%; }
+    @media (max-width: 48em) {
+      #preloader .layer-2 {
+        display: none; } }
+  #preloader .layer-3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200%;
+    width: 17rem;
+    background: #888;
+    transform: rotate(47deg);
+    z-index: -1;
+    transform-origin: 0 62%; }
+  #preloader .layer-4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200%;
+    width: 17rem;
+    background: #464646;
+    transform: rotate(-47deg);
+    z-index: -2;
+    transform-origin: 0 91%; }
+  #preloader #preloader-switch {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    animation: wobble 4s ease infinite;
+    cursor: pointer; }
+    #preloader #preloader-switch img {
+      height: 4rem; }
+    @media (max-width: 48em) {
+      #preloader #preloader-switch {
+        bottom: 8rem;
+        right: 4rem; } }
+  @media (max-width: 48em) {
+    #preloader #page-title {
+      padding-bottom: 10rem; } }
+
 .flyer-wrap {
   width: 100%;
-  height: 100vh;
   margin: auto;
-  perspective: 1000; }
+  perspective: 1000;
+  max-width: 1400px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: -60%;
+  transform: translate(50%, -50%);
+  max-height: 800px;
+  transition: all 1s;
+  opacity: 0; }
+  .flyer-wrap.active {
+    right: 50%;
+    opacity: 1; }
 
 .flyer {
-  box-shadow: 0 2px 5px rgba(50, 50, 50, 0.6);
+  box-shadow: -10px 15px 30px 10px rgba(0, 0, 0, 0.3);
   transition: 1.4s;
   transform-style: preserve3d;
   position: relative;
@@ -579,20 +701,32 @@ div.col-md-4:nth-child(2) {
   height: 100%;
   backface-visibility: hidden; }
 
+@media (max-width: 48em) {
+  .hide-phone {
+    display: none; } }
+
+.h-100 {
+  height: 100%; }
+  @media (max-width: 48em) {
+    .h-100 {
+      height: initial !important; } }
+
 .front {
   z-index: 2; }
 
 .back {
-  transform: rotateY(180deg);
-  margin-top: -100vh; }
+  transform: rotateY(180deg) translateY(-100%); }
 
 .front.flip {
   transform: rotateY(180deg); }
 
 .back.flip {
-  transform: rotateY(0); }
+  transform: rotateY(0) translateY(-100%); }
 
-.flip {
+#next-icon {
   cursor: pointer; }
+
+.flyer.folded #page-1 #next-icon {
+  opacity: 0; }
 
 /*----------------------------------------------------------------------------*/
