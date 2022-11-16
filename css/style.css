@@ -484,8 +484,9 @@ img::selection {
       width: 100%;
       background: url("../images/backgrounds/page 1.png") no-repeat;
       z-index: 2;
-      background-position: 100% 80%;
-      clip-path: polygon(0 0, 0 100%, 100% 0); }
+      background-position: 95% 46%;
+      clip-path: polygon(0 0, 0 100%, 100% 0);
+      }
     #background-1 .layer-4 {
       position: absolute;
       bottom: 0;
