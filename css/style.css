@@ -380,8 +380,10 @@ img::selection {
   height: 100%;
   padding: 0 0 6rem 10rem; }
   #page-title img {
-    max-width: 6.5rem;
-    padding-bottom: 1rem; }
+    /* max-width: 6.5rem; */
+    padding-bottom: 1rem;
+    width: 12rem!important;
+    }
   #page-title h2 {
     font-weight: 700;
     color: #fff;
