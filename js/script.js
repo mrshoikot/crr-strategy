@@ -29,7 +29,7 @@ jQuery(function ($) {
     $(document).ready(function () {
 
         $('#preloader-switch').click(function(){
-            $('.flyer-wrap').addClass('active');
+            $('.flyer-wrap, body').addClass('active');
             $('#preloader').addClass('hide');
         })
 

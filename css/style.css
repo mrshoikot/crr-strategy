@@ -62,8 +62,13 @@ body {
     overflow: auto;
   }
 
-  body .site {
+  body:not(.active){
+    overflow: hidden;
+  }
+
+  body, html {
     overflow-x: hidden;
+    position: relative;
   }
 }
 
@@ -601,7 +606,27 @@ img::selection {
   transition: all .3s;
 }
 
-#next-icon img {
+#next-icon-mobile{
+  position: fixed;
+  z-index: 1111111;
+  right: -5rem;
+  bottom: 4rem;
+  animation: wobble 4s ease infinite;
+  transition: all .3s;
+}
+
+@media (max-width: 48em) {
+  #next-icon {
+    display: none;
+  }
+  .active #next-icon-mobile{
+    right: 2rem;
+  }
+}
+
+
+#next-icon img,
+#next-icon-mobile img {
   height: 4rem;
 }
 
@@ -892,7 +917,8 @@ div.col-md-4:nth-child(2) {
 
 @media (max-width: 48em) {
   #preloader .layer-2 {
-    display: none;
+    right: -20rem;
+    top: -10%;
   }
 }
 
@@ -1014,5 +1040,6 @@ div.col-md-4:nth-child(2) {
 .flyer.folded #page-1 #next-icon {
   opacity: 0;
 }
+
 
 /*----------------------------------------------------------------------------*/
