@@ -34,12 +34,16 @@ jQuery(function ($) {
         })
 
 
-        var toggleState = false;
-
         $('.flip').click(function () {
             $('.flyer').toggleClass('flip');
             console.log('fire');
             $('.front, .back').toggleClass('folded');
+        });
+
+
+        $("#megatrends .mt-list-item-text p").readmore({
+            collapsedHeight: 33,
+            speed: 1000
         });
 
 

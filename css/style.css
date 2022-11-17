@@ -76,8 +76,6 @@ a,
 .btn {
   color: #000;
   transition: all 0.3s ease-out 0s;
-  border: 2px solid #fff;
-  border-radius: 50%;
 }
 
 a,
@@ -213,7 +211,7 @@ img::selection {
 @media (max-width: 48em) {
   #megatrends {
     margin: 0rem auto 0;
-    color: #fff;
+    color: #fff !important;
   }
 }
 
@@ -736,6 +734,7 @@ img::selection {
     background-size: 80% 200%;
     background-position: 0 0;
     z-index: 3;
+    box-shadow: 0 0 0 1000px rgba(0,0,0,.2) inset;
   }
 
   #background-1 .layer-5 {
@@ -1043,5 +1042,22 @@ div.col-md-4:nth-child(2) {
   opacity: 0;
 }
 
+#megatrends .mt-list-item-text p{
+  max-height: 33px;
+  overflow: hidden;
+  transition: all .3s;
+  margin-bottom: 0;
+}
+
+#megatrends .mt-list-item-text p+a{
+  text-decoration: underline;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 48em) {
+  #megatrends .mt-list-item-text p+a {
+    color: #fff !important;
+  }
+}
 
 /*----------------------------------------------------------------------------*/
