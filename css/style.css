@@ -917,8 +917,10 @@ div.col-md-4:nth-child(2) {
 
 @media (max-width: 48em) {
   #preloader .layer-2 {
-    right: -20rem;
+    right: 50%;
     top: -10%;
+    transform: translate(45%, 0);
+    /* top: -10%; */
   }
 }
 
