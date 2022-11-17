@@ -710,7 +710,7 @@ img::selection {
   display: none;
 }
 
-@media (min-width: 1340px) {
+@media (min-width: 1340px) and (min-height: 750px) {
   #background-1 .layer-7 {
     display: block;
     position: absolute;
