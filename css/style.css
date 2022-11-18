@@ -250,7 +250,6 @@ img::selection {
 
 #megatrends .mt-list .mt-list-item {
   display: flex;
-  align-items: center;
   margin: 3rem 0;
 }
 
@@ -259,7 +258,7 @@ img::selection {
   font-weight: 600;
 }
 
-#megatrends .mt-list .mt-list-item p {
+#megatrends .mt-list .mt-list-item{
   font-size: 1.4rem;
 }
 
@@ -1041,20 +1040,20 @@ div.col-md-4:nth-child(2) {
   opacity: 0;
 }
 
-#megatrends .mt-list-item-text p{
+#megatrends .mt-list-item-text .readmore{
   max-height: 33px;
   overflow: hidden;
   transition: all .3s;
   margin-bottom: 0;
 }
 
-#megatrends .mt-list-item-text p+a{
+#megatrends .mt-list-item-text .readmore+a{
   text-decoration: underline;
   font-size: 1.4rem;
 }
 
 @media (max-width: 48em) {
-  #megatrends .mt-list-item-text p+a {
+  #megatrends .mt-list-item-text .readmore+a {
     color: #fff !important;
   }
 }

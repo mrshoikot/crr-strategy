@@ -41,7 +41,7 @@ jQuery(function ($) {
         });
 
 
-        $("#megatrends .mt-list-item-text p").readmore({
+        $("#megatrends .mt-list-item-text .readmore").readmore({
             collapsedHeight: 33,
             speed: 1000
         });
