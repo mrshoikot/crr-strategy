@@ -316,17 +316,16 @@ img::selection {
 }
 
 #market-themes .mt-list .mt-list-item-icon {
-  width: 10rem;
+  margin-right: 1.5rem;
 }
 
 #market-themes .mt-list .mt-list-item-icon img {
   display: block;
-  max-width: 60%;
+  max-width: 3.3rem;
 }
 
 #market-themes .mt-list .mt-list-item {
   display: flex;
-  align-items: center;
   margin: 0rem 0;
 }
 
