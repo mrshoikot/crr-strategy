@@ -197,7 +197,7 @@ img::selection {
 }
 
 #megatrends {
-  max-width: 40rem;
+  max-width: 42rem;
   margin: 7rem auto 0;
 }
 
@@ -1060,31 +1060,42 @@ div.col-md-4:nth-child(2) {
 }
 
 @media (min-width: 48em){
-  #market-themes{
+  #market-themes,
+  #megatrends{
     padding-right: 1rem;
   }
-  #market-themes .mt-list{
+  #market-themes .mt-list,
+  #megatrends .mt-list{
     max-height: 400px;
     overflow: auto;
     padding-right: 2rem;
   }
 
-  #market-themes .mt-list::-webkit-scrollbar {
+  #megatrends .mt-list{
+    max-height: 330px;
+  }
+
+  #market-themes .mt-list::-webkit-scrollbar,
+  #megatrends .mt-list::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
-  #market-themes .mt-list::-webkit-scrollbar-track {
+  #market-themes .mt-list::-webkit-scrollbar-track,
+  #megatrends .mt-list::-webkit-scrollbar-track {
     border-radius: 10px;
     background: rgba(0,0,0,0.1);
   }
-  #market-themes .mt-list::-webkit-scrollbar-thumb{
+  #market-themes .mt-list::-webkit-scrollbar-thumb,
+  #megatrends .mt-list::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background: rgba(0,0,0,0.2);
   }
-  #market-themes .mt-list::-webkit-scrollbar-thumb:hover{
+  #market-themes .mt-list::-webkit-scrollbar-thumb:hover,
+  #megatrends .mt-list::-webkit-scrollbar-thumb:hover{
   	background: rgba(0,0,0,0.4);
   }
-  #market-themes .mt-list::-webkit-scrollbar-thumb:active{
+  #market-themes .mt-list::-webkit-scrollbar-thumb:active,
+  #megatredns .mt-list::-webkit-scrollbar-thumb:active{
   	background: rgba(0,0,0,.9);
   }
   
