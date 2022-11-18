@@ -36,8 +36,6 @@ jQuery(function ($) {
 
         $('.flip').click(function () {
             $('.flyer').toggleClass('flip');
-            console.log('fire');
-            $('.front, .back').toggleClass('folded');
         });
 
 
