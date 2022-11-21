@@ -28,6 +28,13 @@ jQuery(function ($) {
 
     $(document).ready(function () {
 
+        var browserZoomLevel = Math.round(window.devicePixelRatio * 100);
+
+        if (browserZoomLevel > 100) {
+            alert('You are zoomed in ' + browserZoomLevel + '%. For the best experience, please use 100% zoom level');
+        }
+
+
         $('#preloader-switch').click(function(){
             $('.flyer-wrap, body').addClass('active');
             $('#preloader').addClass('hide');
