@@ -281,8 +281,16 @@ html {
     border-radius: 50%;
   }
 
-  #megatrends .mt-list li:nth-child(odd) .mt-list-item-icon {
+  #megatrends .mt-list li:nth-child(n) .mt-list-item-icon {
     background: #c15535;
+  }
+
+  #megatrends .mt-list li:nth-child(2n) .mt-list-item-icon {
+    background: rgb(51, 51, 51);
+  }
+
+  #megatrends .mt-list li:nth-child(3n) .mt-list-item-icon {
+    background: #f2b743;
   }
 
   #market-themes {
