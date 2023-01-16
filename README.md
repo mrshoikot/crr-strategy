@@ -1,7 +1,7 @@
 # CRR Strategy
 A beautiful interactive brochure
 
-https://mrshoikot.github.io/crr_strategy/
+https://mrshoikot.github.io/crr-strategy/
 
 ## Folded
 ![image](https://user-images.githubusercontent.com/26254253/212668402-e2178ada-4a97-4bec-9456-973eb6bd9739.png)
